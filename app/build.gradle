@@ -66,8 +66,6 @@ dependencies {
     debugImplementation 'androidx.compose.ui:ui-tooling'
     debugImplementation 'androidx.compose.ui:ui-test-manifest'
 
-    //retrofit
-    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
     //gson
     implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
     // LiveData
@@ -75,9 +73,6 @@ dependencies {
     implementation "androidx.lifecycle:lifecycle-livedata-core-ktx:2.6.1"
     //logging interceptor
     implementation "com.squareup.okhttp3:logging-interceptor:4.5.0"
-    //dagger hilt
-    implementation 'com.google.dagger:hilt-android:2.46'
-    kapt 'com.google.dagger:hilt-compiler:2.46'
 
 
     // paging 3
@@ -97,16 +92,13 @@ dependencies {
     implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.1"
     implementation "androidx.lifecycle:lifecycle-runtime-ktx:2.6.1"
 
-    //Dagger - Hilt
-    implementation 'com.google.dagger:hilt-android:2.46'
+
     //May need okkhttp also
     implementation 'com.squareup.okhttp3:okhttp:5.0.0-alpha.2'
-    kapt 'androidx.hilt:hilt-compiler:1.0.0'
 
     // Dagger - Hilt
-    kapt "com.google.dagger:hilt-android-compiler:2.40.1"
-    implementation "androidx.hilt:hilt-lifecycle-viewmodel:1.0.0-alpha03"
-    kapt "androidx.hilt:hilt-compiler:1.0.0"
+    implementation 'com.google.dagger:hilt-android:2.46'
+    kapt 'com.google.dagger:hilt-compiler:2.46'
     implementation "androidx.hilt:hilt-navigation-compose:1.0.0"
 
     // Retrofit

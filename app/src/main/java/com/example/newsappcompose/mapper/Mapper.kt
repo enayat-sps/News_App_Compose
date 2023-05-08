@@ -4,20 +4,20 @@ import com.example.newsappcompose.data.model.ArticleDTO
 import com.example.newsappcompose.domain.model.ArticleModel
 
 //
-fun List<ArticleDTO>.toDomain(): List<ArticleModel> {
+fun List<ArticleDTO?>.toDomain(): List<ArticleModel> {
     return map {
         ArticleModel(
-            author = it.author ?: "",
-            content = it.content ?: "",
-            description = it.description ?: "",
-            publishedAt = it.publishedAt ?: "",
-            title = it.title ?: "",
-            urlToImage = it.urlToImage ?: "",
+            author = it?.author ?: "",
+            content = it?.content ?: "",
+            description = it?.description ?: "",
+            publishedAt = it?.publishedAt ?: "",
+            title = it?.title ?: "",
+            urlToImage = it?.urlToImage ?: "",
         )
     }
 }
 
-fun toDomain(list: List<ArticleDTO>): List<ArticleModel> {
+fun toDomainMapper(list: List<ArticleDTO>): List<ArticleModel> {
 
     val articleModel = arrayListOf<ArticleModel>()
 
